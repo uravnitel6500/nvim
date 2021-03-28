@@ -29,3 +29,7 @@ set noerrorbells
 set tabstop=4 softtabstop=4
 set expandtab
 set smartindent
+
+"-- EMMET CONFIG --
+" redefine trigger key
+let g:user_emmet_leader_key=','
