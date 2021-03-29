@@ -11,24 +11,29 @@ Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'sirver/ultisnips'
 call plug#end()
 
 colorscheme gruvbox
 map <silent> <C-n> :NERDTreeFocus<CR>
 
 filetype plugin indent on	" required
-syntax on
-set colorcolumn=80
-set background=dark
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+syntax enable
 set number
-set nowrap
-set smartcase
-set hlsearch
-set noerrorbells
-set tabstop=4 softtabstop=4
+set encoding=utf-8
+set noswapfile
+set scrolloff=7
+set backspace=indent,eol,start
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
-set smartindent
+set autoindent
+set fileformat=unix
 
 "-- EMMET CONFIG --
 " redefine trigger key
